@@ -1,6 +1,5 @@
-nombres = ["Jose","Ignacio","Zasha"]
-apellidos =["Riquelme","Escobar","Rivera"]
-nombres.sort()
-apellidos.sort()
-print(nombres)
-print(apellidos)
+lista1 = ["Jose", "Isabel", "Claudio"]
+lista2 = ["Riquelme", "Escobar", "Barrios"]
+
+for i in range(3):
+    print(f"Nombre Completo: {lista1[i]} {lista2[i]}")

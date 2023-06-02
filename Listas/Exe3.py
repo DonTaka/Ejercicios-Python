@@ -1,12 +1,13 @@
 lista = []
 
 for i in range(10):
-    numero = int(input(f"Ingrese numero {i+1}: "))
+    numero = int(input("Ingrese un numero: "))
     lista.append(numero)
-suma=0
-promedio=0
-for i in lista:
-    suma +=i
+
+suma = 0
+
+for x in lista:
+    suma += x
 
 print(f"La suma de los valores de la lista es {suma}")
-print(f"El promedio de valores de la lista es {suma/10}")
+print(f"El promedio de los valores de la lista es {suma/10}")
