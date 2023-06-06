@@ -19,3 +19,16 @@ for y in range(10):
     for x in range(10):
         if  arr[y][x]==numero:
             print(f"El valor de la coordenada : fila {y} columna {x} es {arr[y][x]}")
+
+
+#Ejercicio 1 
+#Bidimensional de 3x3 aleatorios de 0 a 100
+import random
+
+lista = []
+
+for i in range(9):
+    lista.append(random.randint(0,100))
+
+resultado = np.array(lista).reshape((3,3))
+print(resultado)
