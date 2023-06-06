@@ -1,11 +1,17 @@
-import numpy as np
-
 # IMPORTANTE
 # Si se quiere usar numpy es necesario instalar la libreria
 # PAra hacerlo apretar ctrl + shift + ñ
 # escribir pip install numpy
 # Esto instalara la libreria que usaremos en la ultima unidad
 
+#Nota
+#Si el pip install lanza error , aplicar el siguiente comando
+#py -m ensurepip
+#Esto forzara la instalacion del pip por parte de python
+#Si el problema persiste
+#aplicar el siguiente comando
+#py -m pip install numpy
+import numpy as np
 # Creacion de arreglo con numpy
 # np.array() = Generar arreglo con datos de lista en el parentesis
 arreglo = np.array([1, 2, 3, 4, 5])
@@ -29,7 +35,7 @@ print("El largo del arreglo es : ", len(arreglo))
 # Rellenar una lista con ciclo for
 
 arreglo2 = [i for i in range(1, 11)]
-arreglo2 = np.array(c)
+arreglo2 = np.array(arreglo2)
 print(arreglo2)
 
 # Recorrido obteniendo largo con LEN
@@ -60,3 +66,25 @@ arreglo3-=arreglo2
 print(arreglo3)
 #Arr3 es mayor a Arr2
 print(arreglo3>arreglo2)
+
+
+
+#Operaciones
+
+arreglo4 = np.arange(1,16)
+
+print(arreglo4)
+
+#Sum = genero una suma con todos los valores del arreglo
+
+print(f"La suma de los valores del arreglo es {arreglo4.sum()}")
+
+#Mean = OBtengo el promedio de valores del arreglo
+
+print(f"El promedio de valores del arreglo es {arreglo4.mean()}")
+
+#Min = Valor mas bajo
+#Max = Valor mas alto
+
+print(f"El valor mas bajo del arreglo es: {arreglo4.min()}")
+print(f"El valor mas alto del arreglo es: {arreglo4.max()}")
