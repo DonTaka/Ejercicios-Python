@@ -31,3 +31,17 @@ print(arr[6][0:3])
 print(arr[0:5,0:4])
 #Slice con Step
 print(arr[0:5:2,0::2])
+
+
+#Crear un arreglo bidimensional de 3x3 
+#Con datos aleatorios de 0 a 100
+
+import random 
+
+lista = []
+
+for i in range(9):
+    lista.append(random.randint(0,100))
+
+arreglo = np.array(lista).reshape((3,3))
+print(arreglo)
