@@ -40,12 +40,15 @@ print(np.concatenate((arr1,arr2),axis=1))
 
 #Crear un arreglo de dos dimensiones de tamaño 3 x 3
 #Con elementos aleatorios de números enteros del 0 al 100.
-import random
-lista = []
-for i in range(9):
-    lista.append(random.randint(0,100))
+arreglo = np.arange(1,101)
+print(arreglo)
+arreglo = arreglo.reshape((10,10))
+print(arreglo)
 
-resultado = np.array(lista).reshape((3,3))
-print(resultado)
+#Rellenar un arreglo bidimensional de 10 x 10 con numeros de 0 a 500
+#Randint(Inicio,termino,(filas,columnas))
+arr = np.random.randint(0,500,(10,10))
+arr.sort()
+print(arr)
 
 
