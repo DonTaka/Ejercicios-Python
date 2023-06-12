@@ -32,6 +32,6 @@ def IMC(peso,estatura):
         print("Obesidad grado 3")
         
 peso = int(input("Ingrese su peso: "))
-estatura = int(input("Ingrese su estatura"))
+estatura = float(input("Ingrese su estatura"))
 
 IMC(peso,estatura)
