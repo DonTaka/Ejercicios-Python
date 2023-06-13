@@ -20,9 +20,12 @@ def exe2():
                 if(x>=3 and x<=6):
                     large = y*x
                     arr =  np.arange(1,large+1).reshape((y,x)) 
-                    print(arr)
+                    break
                 else:
                     print("X debe estar entre 3 y 6")
+            print(arr)
+            print(f"La suma de las filas es: {arr[:,:].sum()}")
+            break
         else:
             print("Y debe estar entre 3 y 6")
 
