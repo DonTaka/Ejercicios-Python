@@ -1,11 +1,13 @@
 #Lista base productos
 lista =[['123612JDHRS','Servidor Huawei',220000]]
 print(lista)
+
+listaParte= ['ABC123','ASD645','ZXC987','QWE222','PSY293','KLG522','PLR420','GGW112','OPT200','GOD690',]
 #Agregar
 def agregar():
     try:
         numeroParte = input("Ingrese numero parte: ")
-        if len(numeroParte)>=10:
+        if numeroParte in listaParte:
             nombre = input("Ingrese nombre del producto: ")
             if len(nombre)>=6:
                 precio = int(input("Ingrese precio del producto: "))
@@ -17,7 +19,7 @@ def agregar():
             else:
                 print("Nombre debe tener minimo 6 caracteres")
         else:
-            print("Numero parte debe tener minimo 10 caracteres minimo")
+            print("Numero parte no se encuentra en el registro ")
     except ValueError:
         print("error en los valores")
 
