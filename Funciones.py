@@ -1,30 +1,44 @@
-def saludar(nombre):
-    print(f"Hola Bienvenido {nombre}")
+def saludo():
+    print("Bienvenido Usuario")
 
 
+lista = [10, 50, 100, 500, 1000, 5000]
 
-saludar("Jose")
 
-#Eliminar un registro
+# sin arg sin return
+# Muestre todos los valores de la lista
+def listar():
+    for i in range(len(lista)):
+        print(lista[i])
 
-lista = [10,50,100,500,1000,5000]
 
+# sin arg con retorno
+def sizeLista():
+    return len(lista)
+
+
+# print(f"El largo de la lista es: {sizeLista()}")
+def buscar(valor):
+    res = "No se encuentra"
+    for x in lista:
+        if x == valor:
+            res = "Valor existe"
+    print(res)
+
+
+# num = int(input("Ingrese valor a buscar: "))
+# buscar(num)
+
+
+# Eliminar un registro de la lista
 def eliminar(valor):
-    lista.remove(valor)
+    try:
+        lista.remove(valor)
+        print("Eliminado con exito")
+    except ValueError:
+        print("Valor no se encuentra")
+
 
 #num = int(input("Ingrese un valor"))
-
 #eliminar(num)
-
-print(lista)
-
-#Sumar todos los valores de lista 
-def calcularLista():
-    total = 0 
-    for i in lista:
-        total+=i
-    return total
-
-sumaLista = calcularLista()
-
-print(f"La suma de todos los valores de la lista es: {calcularLista()}")
+#listar()
