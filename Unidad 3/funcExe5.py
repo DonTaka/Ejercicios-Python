@@ -3,6 +3,7 @@ lista =[['123612JDHRS','Servidor Huawei',220000]]
 print(lista)
 
 listaParte= ['ABC123','ASD645','ZXC987','QWE222','PSY293','KLG522','PLR420','GGW112','OPT200','GOD690',]
+
 #Agregar
 def agregar():
     try:
